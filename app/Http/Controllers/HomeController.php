@@ -27,7 +27,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+      return view('home');
     }
 
     public function Dashboard() {
@@ -44,7 +45,6 @@ class HomeController extends Controller
     }
 
     public function Question_List_Data($subject_id) {
-
       $data = DB::select("SELECT * FROM tbl_question WHERE subject_id = {$subject_id};");
 
       $count = COUNT($data);

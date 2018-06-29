@@ -12,7 +12,6 @@ use DB;
 
 class QuestionController extends Controller
 {
-    //          nk
 
     public function index() {
 
@@ -21,7 +20,7 @@ class QuestionController extends Controller
       return view("admin.teacher.createQuestion");
     }
 
-    public function post_mathjs(Request $request) { 
+    public function post_mathjs(Request $request) {
       $an = new Answer();
       $an->answer=$request->val;
 

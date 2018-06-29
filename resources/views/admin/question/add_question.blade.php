@@ -1,6 +1,6 @@
 @extends('layout.app')
 <?php
-  $ssl = false;
+  $ssl = true;
 ?>
 
 @section('css')
